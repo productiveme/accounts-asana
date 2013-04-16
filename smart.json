@@ -1,8 +1,8 @@
 {
-  "name": "accounts-github",
-  "description": "Github OAuth2 login service for use with Meteor Auth",
-  "homepage": "https://github.com/Jabbslad/accounts-github",
-  "author": "Jamie Atkinson <jabbslad@gmail.com>",
+  "name": "accounts-asana",
+  "description": "Asana OAuth2 login service for use with Meteor Auth",
+  "homepage": "https://github.com/ProductiveMe/accounts-asana",
+  "author": "Jaco Swarts <jaco@productive.me>",
   "version": "0.1.0",
-  "git": "https://github.com/Jabbslad/accounts-github.git"
+  "git": "https://github.com/productiveme/accounts-asana.git"
 }
