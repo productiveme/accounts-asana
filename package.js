@@ -1,5 +1,5 @@
 Package.describe({
-  summary: "Login service for Github accounts"
+  summary: "Login service for Asana accounts"
 });
 
 Package.on_use(function(api) {
@@ -9,10 +9,10 @@ Package.on_use(function(api) {
   api.use('templating', 'client');
 
   api.add_files(
-    ['github_configure.html', 'github_configure.js'],
+    ['asana_configure.html', 'asana_configure.js'],
     'client');
   
-  api.add_files('github_common.js', ['client', 'server']);
-  api.add_files('github_server.js', 'server');
-  api.add_files('github_client.js', 'client');
+  api.add_files('asana_common.js', ['client', 'server']);
+  api.add_files('asana_server.js', 'server');
+  api.add_files('asana_client.js', 'client');
 });
