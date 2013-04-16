@@ -1,9 +1,9 @@
 (function () {
-  Meteor.accounts.asana.setSecret = function (secret) {
-    Meteor.accounts.asana._secret = secret;
+  Accounts.asana.setSecret = function (secret) {
+    Accounts.asana._secret = secret;
   };
 
-  Meteor.accounts.oauth.registerService('asana', 2, function(query) {
+  Accounts.oauth.registerService('asana', 2, function(query) {
 
   	var tokenData = getAccessToken(query);
     var accessToken = tokenData.access_token;
@@ -24,16 +24,16 @@
   });
 
   var getAccessToken = function (query) {
-	  var config = Meteor.accounts.configuration.findOne({service: 'asana'});
+	  var config = Accounts.loginServiceConfiguration.findOne({service: 'asana'});
 	  if (!config)
-		  throw new Meteor.accounts.ConfigError("Service not configured");
+		  throw new Accounts.ConfigError("Service not configured");
 	  
 	  var result = Meteor.http.post(
 			  "https://app.asana.com/-/oauth_token", {headers: {Accept: 'application/json'}, params: {
 				  code: query.code,
 				  client_id: config.clientId,
 				  client_secret: config.secret,
-				  redirect_uri: Meteor.absoluteUrl("_oauth/github?close"),
+				  redirect_uri: Meteor.absoluteUrl("_oauth/asana?close"),
 				  state: query.state
 			  }});
 	  if (result.error) // if the http response was an error

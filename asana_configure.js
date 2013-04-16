@@ -1,8 +1,8 @@
-Template.configureLoginServicesDialogForAsana.siteUrl = function () {
+Template.configureLoginServiceDialogForAsana.siteUrl = function () {
   return Meteor.absoluteUrl();
 };
 
-Template.configureLoginServicesDialogForAsana.fields = function () {
+Template.configureLoginServiceDialogForAsana.fields = function () {
   return [
     {property: 'clientId', label: 'Client ID'},
     {property: 'secret', label: 'Client secret'}

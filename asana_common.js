@@ -1,7 +1,7 @@
-if (!Meteor.accounts.asana) {
-	Meteor.accounts.asana = {};
+if (!Accounts.asana) {
+	Accounts.asana = {};
 }
 
-Meteor.accounts.asana.config = function(options) {
-	Meteor.accounts.asana._options = options;
+Accounts.asana.config = function(options) {
+	Accounts.asana._options = options;
 };
