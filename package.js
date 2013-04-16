@@ -9,7 +9,7 @@ Package.on_use(function(api) {
   api.use('templating', 'client');
 
   api.add_files(
-    ['asana_configure.html', 'asana_configure.js'],
+    ['asana_login_button.css','asana_configure.html', 'asana_configure.js'],
     'client');
   
   api.add_files('asana_common.js', ['client', 'server']);
