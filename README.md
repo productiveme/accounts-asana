@@ -1,6 +1,6 @@
-## accounts-github
+## accounts-asana
 
-Github OAuth2 login service for use with Meteor Auth
+Asana OAuth2 login service for use with Meteor Auth
 
 ### Package Dependencies
 
@@ -12,11 +12,11 @@ This login service depends on the bleeding edge changes within the Meteor Auth b
 
 ### Usage
 
-1. `meteor add accounts-github`
+1. Clone the repo into your local meteor `packages` folder
 2. Read the 'Integrating with Login Services' section of [Getting Started with Auth](https://github.com/meteor/meteor/wiki/Getting-started-with-Auth) and make sure you set up your config and secret correctly.
-3. Call `Meteor.loginWithGithub();`
+3. Call `Meteor.loginWithAsana();`
 
 ### Credits
 
-* Shamelessly based upon [@possibilities](https://github.com/possibilities) Google OAuth2 login service
-* [@bradens](https://github.com/bradens) fixes for latest `auth` branch changes and support for configurable dialog. Thanks man!
+* Shamelessly based upon [Jamie Atkinson's Github Auth package](https://github.com/Jabbslad/accounts-github) which in turn is based on [@possibilities](https://github.com/possibilities) Google OAuth2 login service
+
