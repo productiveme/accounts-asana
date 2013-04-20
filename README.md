@@ -15,7 +15,7 @@ This login service depends on the bleeding edge changes within the Meteor Auth b
 * Clone the repo into your local meteor `packages` folder
 * OR install with meteorite
 
-    mrt add accounts-asana
+	mrt add accounts-asana
 
 * Call `Meteor.loginWithAsana();`
 

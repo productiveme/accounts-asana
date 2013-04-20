@@ -3,6 +3,6 @@
   "description": "Asana OAuth2 login service for use with Meteor Auth",
   "homepage": "https://github.com/ProductiveMe/accounts-asana",
   "author": "Jaco Swarts <jaco@productive.me>",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "git": "https://github.com/productiveme/accounts-asana.git"
 }
