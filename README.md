@@ -12,9 +12,12 @@ This login service depends on the bleeding edge changes within the Meteor Auth b
 
 ### Usage
 
-1. Clone the repo into your local meteor `packages` folder
-2. Read the 'Integrating with Login Services' section of [Getting Started with Auth](https://github.com/meteor/meteor/wiki/Getting-started-with-Auth) and make sure you set up your config and secret correctly.
-3. Call `Meteor.loginWithAsana();`
+* Clone the repo into your local meteor `packages` folder
+* OR install with meteorite
+
+	mrt add accounts-asana
+
+* Call `Meteor.loginWithAsana();`
 
 ### Credits
 
