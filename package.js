@@ -4,13 +4,11 @@ Package.describe({
 
 Package.on_use(function(api) {
   api.use('accounts-base', ['client', 'server']);
-  api.use('accounts-oauth2-helper', ['client', 'server']);
+  api.use('accounts-oauth', ['client', 'server']);
   api.use('http', ['client', 'server']);
-  api.use('templating', 'client');
+  api.use('asana', ['client', 'server']);
 
-  api.add_files(
-    ['asana_login_button.css','asana_configure.html', 'asana_configure.js'],
-    'client');
+  api.add_files('asana_login_button.css', 'client');
   
   api.add_files('asana_common.js', ['client', 'server']);
   api.add_files('asana_server.js', 'server');
