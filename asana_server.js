@@ -1,5 +1,3 @@
-Accounts.oauth.registerService('asana');
-
 Accounts.addAutopublishFields({
   forLoggedInUser: _.map(Asana.whitelistedFields, 
     function(subfield) {
