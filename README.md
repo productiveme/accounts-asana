@@ -2,13 +2,10 @@
 
 Asana OAuth2 login service for use with Meteor Auth
 
-### Package Dependencies
+### Dependencies
 
-This login service depends on the bleeding edge changes within the Meteor Auth branch. See [https://github.com/meteor/meteor/wiki/Getting-started-with-Auth](https://github.com/meteor/meteor/wiki/Getting-started-with-Auth) for further details.
-
-* accounts ([Meteor Auth Branch](https://github.com/meteor/meteor/wiki/Getting-started-with-Auth))
-* accounts-oauth2-helper ([Meteor Auth Branch](https://github.com/meteor/meteor/wiki/Getting-started-with-Auth))
-* http
+* [asana]()
+* Meteor v0.7.1+
 
 ### Usage
 
@@ -23,5 +20,4 @@ This login service depends on the bleeding edge changes within the Meteor Auth b
 
 ### Credits
 
-* Shamelessly based upon [Jamie Atkinson's Github Auth package](https://github.com/Jabbslad/accounts-github) which in turn is based on [@possibilities](https://github.com/possibilities) Google OAuth2 login service
-
+* Cloned and adapted from [Jamie Atkinson's Github Auth package](https://github.com/Jabbslad/accounts-github)
