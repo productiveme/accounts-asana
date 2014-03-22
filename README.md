@@ -4,7 +4,7 @@ Asana OAuth2 login service for use with Meteor Auth
 
 ### Dependencies
 
-* [asana]()
+* [asana](https://github.com/productiveme/asana)
 * Meteor v0.7.1+
 
 ### Usage
