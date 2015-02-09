@@ -28,7 +28,6 @@ meteor create TestAsana
 cd TestAsana
 meteor add accounts-ui
 meteor add productiveme:accounts-asana
-meteor add productiveme:asana
 ```
 Update `TestAsana.html` to the following:
 
