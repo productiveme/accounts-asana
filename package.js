@@ -18,7 +18,6 @@ Package.onUse(function(api) {
   api.imply('accounts-base', ['client', 'server']);
   api.use('accounts-oauth', ['client', 'server']);
   api.use('underscore', 'server');
-  api.use('asana', ['client', 'server']);
 
   api.addFiles('asana_login_button.css', 'client');
   

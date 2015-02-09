@@ -13,7 +13,7 @@ Asana OAuth2 login service for use with Meteor Auth
 * OR install with meteorite
 
 ``` bash
-	$ mrt add accounts-asana
+	$ meteor add productiveme:accounts-asana
 ```
 
 * Call `Meteor.loginWithAsana();`
