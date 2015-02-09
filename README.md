@@ -28,6 +28,7 @@ meteor create TestAsana
 cd TestAsana
 meteor add accounts-ui
 meteor add productiveme:accounts-asana
+meteor add productiveme:asana
 ```
 Update `TestAsana.html` to the following:
 
@@ -59,9 +60,11 @@ Change the `TestAsana.js` file to the following:
 
 ```javascript
 if (Meteor.isClient) {
-  Template.hello.greeting = function () {
-    return "Welcome to TestAsana.";
-  };
+  Template.hello.helpers({
+    greeting: function () {
+      return "Welcome to TestAsana.";
+    }
+  });
 
   Template.hello.events({
     'click input': function () {
@@ -86,8 +89,8 @@ if (Meteor.isServer) {
 
       var client = Asana.createClient({
         oauth: {
-          clientId: '133**********', // <-- Your clientId here
-          clientSecret: '63f*******************', // <-- Your client secret
+          clientId: '**************', // <-- Your clientId here
+          clientSecret: '********************************', // <-- Your client secret
           accessToken: Meteor.user().services.asana.accessToken,
           refreshToken: Meteor.user().services.asana.refreshToken,
           redirectUrl: Meteor.absoluteUrl("_oauth/asana?close")
