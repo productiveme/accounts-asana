@@ -1,4 +1,3 @@
-
 Accounts.oauth.registerService('asana');
 
 if (!Accounts.asana) {

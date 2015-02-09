@@ -5,7 +5,7 @@ Asana OAuth2 login service for use with Meteor Auth
 ### Dependencies
 
 * [asana](https://github.com/productiveme/asana)
-* Meteor v0.7.1+
+* Meteor v1.0+
 
 ### Usage
 
@@ -27,8 +27,8 @@ Here is an example of setting up the accounts-asana package for a new meteor pro
 meteor create TestAsana
 cd TestAsana
 meteor add accounts-ui
-mrt add accounts-asana
-meteor add asana
+meteor add productiveme:accounts-asana
+meteor add productiveme:asana
 ```
 Update `TestAsana.html` to the following:
 
