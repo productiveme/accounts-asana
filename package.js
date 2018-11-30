@@ -1,6 +1,6 @@
 Package.describe({
   name: 'productiveme:accounts-asana',
-  version: '1.0.5',
+  version: '1.0.6',
   // Brief, one-line summary of the package.
   summary: 'Asana OAuth2 login service for use with Meteor Auth, requires asana package',
   // URL to the Git repository containing the source code for this package.
@@ -12,7 +12,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
-  api.use('productiveme:asana@1.0.5', ['client', 'server']);
+  api.use('productiveme:asana@1.0.6', ['client', 'server']);
 	api.use('accounts-base', ['client', 'server']);
   // Export Accounts (etc) to packages using this one.
   api.imply('accounts-base', ['client', 'server']);
