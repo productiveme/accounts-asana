@@ -47,8 +47,8 @@ oauth@2.1.2
 oauth2@1.3.1
 observe-sequence@1.0.16
 ordered-dict@1.1.0
-productiveme:accounts-asana@1.1.0
-productiveme:asana@1.1.0
+productiveme:accounts-asana@1.1.1
+productiveme:asana@1.1.1
 promise@0.12.0
 random@1.2.0
 rate-limit@1.0.9
